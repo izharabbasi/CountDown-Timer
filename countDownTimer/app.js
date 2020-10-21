@@ -1,31 +1,27 @@
 const daysEl = document.getElementById('days');
-const hoursEl= document.getElementById('hours');
-const minutesEl = document.getElementById('minutes');
+const hoursEl = document.getElementById('hours');
+const minsEL = document.getElementById('mins');
 const secondsEl = document.getElementById('seconds');
-
-
 
 const newYears = '1 Jan 2021'
 
-function countDown(){
+function newYearEve(){
     const newYearDate = new Date(newYears);
-    const currntDate = new Date();
+    const CurrentDate = new Date();
 
-    const totalSeconds = (newYearDate - currntDate) / 1000;
+    const totalSeconds = (newYearDate - CurrentDate) / 1000;
 
-    const days = Math.floor(totalSeconds / 3600 /24);
-    const hours = Math.floor(totalSeconds / 3600) % 24;
-    const minutes = Math.floor(totalSeconds / 60) % 60;
-    const seconds = Math.floor(totalSeconds) % 60;
+    const days = Math.floor(totalSeconds / 3600 / 24); 
+    const hours = Math.floor(totalSeconds / 3600) % 24; 
+    const minutes = Math.floor(totalSeconds / 60) % 60; 
+    const seconds = Math.floor(totalSeconds) % 60; 
 
     daysEl.innerHTML = days;
     hoursEl.innerHTML = hours;
-    minutesEl.innerHTML = minutes;
+    minsEL.innerHTML = minutes;
     secondsEl.innerHTML = seconds;
-
-
 }
 
-countDown()
+newYearEve()
 
-setInterval(countDown, 1000)
+setInterval(newYearEve, 1000)
