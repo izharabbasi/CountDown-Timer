@@ -1,0 +1,42 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('images/snow1.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 4rem;
+
+}
+
+.container{
+    display: flex;
+
+}
+
+.bigtext{
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+}
+
+.countdown{
+    text-align: center;
+}
+
+.countdown span{
+    font-size: 1.5rem;
+}
